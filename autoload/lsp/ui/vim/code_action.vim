@@ -47,7 +47,7 @@ function! lsp#ui#vim#code_action#do(option) abort
                     \   'range': empty(l:diagnostic) || l:selection ? l:range : l:diagnostic['range'],
                     \   'context': {
                     \       'diagnostics' : empty(l:diagnostic) ? [] : [l:diagnostic],
-                    \       'only': ['', 'quickfix', 'refactor', 'refactor.extract', 'refactor.inline', 'refactor.rewrite', 'source', 'source.organizeImports', 'refactor.wingman.fillHole', 'refactor.wingman.refine', 'quickfix.import.new.list.topLevel'],
+                    \       'only': ['', 'quickfix', 'refactor', 'refactor.extract', 'refactor.inline', 'refactor.rewrite', 'source', 'source.organizeImports',  'refactor.wingman.refine',  'refactor.wingman.caseSplit',  'refactor.wingman.splitFuncArgs', 'refactor.wingman.fillHole', 'refactor.wingman.useConstructor', 'quickfix.import.new.all.list.topLevel', 'quickfix.import.new.list.topLevel', 'quickfix.import.new.list.withParent', 'quickfix.import.refine', 'quickfix.import.new.all',  'quickfix.import.new.qualified', 'quickfix.import.extend.list.topLevel'],
                     \   },
                     \ },
                     \ 'sync': l:sync,
